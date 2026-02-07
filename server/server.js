@@ -18,7 +18,7 @@ app.use(cors());
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("Fitory backend is running ✅");
+  res.send("Fitory backend is running");
 });
 
 // Auth routes
@@ -32,7 +32,6 @@ app.use("/api/templates", templateRoutes);
 
 // User Routes
 app.use("/api/users", userRoutes);
-
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`🔥 Server running on port ${PORT}`));
